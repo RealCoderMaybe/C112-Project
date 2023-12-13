@@ -1,0 +1,37 @@
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <center>
+    <h id="heading">Hand Gesture Identification</h>
+    <p> 👍 | 🤚 | ✊ | 👌 | ✌️</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="camera">
+
+    </div>
+    <br>
+    <br>
+    <button id="capture" onclick="take_snapshot()"> Capture </button>
+    <button id="identify" onclick="identifyImage()"> Identify </button>
+    <span id="guesses">
+    <div>
+<p>I guess you are making this hand gesture </p>
+<h1 id="emoji1"> </h1>
+    </div>
+
+    <div>
+      <p>I guess you are making this hand gesture </p>
+      <h2 id="emoji2"> </h2>
+          </div>
+  </span> 
+</center>
+  </body>
